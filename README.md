@@ -19,5 +19,5 @@ Output: false
 
 The input cannot be separated by any valid words.
 
-Feel free to be creative, considering options such as words of differing character lengths, memory and performance considerations for the project.      
+Feel free to be creative, considering options such as input of differing character length, memory and performance considerations for the project.      
 
