@@ -2,7 +2,7 @@
 Word Break problem
 
 
-Given a valid word from the dictionary, find out whether the word can be segmented into a sequence of valid words from the dictionary.  
+Given an input, find out whether the word can be segmented into a sequence of valid words from the dictionary.  
 
 Assume words are available in a dictionary.
 https://github.com/tmobil/WordBreak/blob/master/english.json
