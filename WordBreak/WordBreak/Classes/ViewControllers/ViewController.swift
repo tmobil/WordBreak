@@ -68,17 +68,12 @@ class ViewController: UIViewController {
     }
     
     func fetchJsonDictionary(){
+
         WordBreakAPI().getDictionaryJsonDataAPI(success: { jsonDict  in
-            DispatchQueue.main.async {
                 //                print(jsonDict)
-                for obj in jsonDict {
-                    var varModelObj = WordModel()
-                    varModelObj.wordTitle = obj.key
-                    varModelObj.wordDescription = obj.value as? [String]
-                    self.dictWordModelListArray.append(varModelObj)
-                }
-                self.dictWordListArray = [String](jsonDict.keys)
-                
+                DispatchQueue.main.async {
+                    self.dictWordModelListArray = ParserHelper.parseResponse(responseDict: jsonDict)
+                    self.dictWordListArray = [String](jsonDict.keys)
                 //For Testing:
                 //                 self.dictWordListArray.removeAll()
                 //                 self.dictWordListArray = ["Given", "an", "input", "find", "out", "whether", "the", "input", "can", "be", "segmented", "into", "a", "sequence", "of", "dictionary"]
@@ -86,7 +81,6 @@ class ViewController: UIViewController {
                 
                 self.hideLoader()
             }
-            
         }, failure: { message in
             DispatchQueue.main.async {
                 print(message)
