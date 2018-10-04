@@ -22,6 +22,9 @@
 		070B634D216501BF00A5CA32 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070B634C216501BF00A5CA32 /* Constants.swift */; };
 		070B634F21652D2200A5CA32 /* WebServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070B634E21652D2200A5CA32 /* WebServiceManager.swift */; };
 		070B63512165300D00A5CA32 /* WordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070B63502165300D00A5CA32 /* WordModel.swift */; };
+		07FD7A6B2166938D00C97057 /* ParserHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FD7A6A2166938D00C97057 /* ParserHelper.swift */; };
+		07FD7A6C2166938D00C97057 /* ParserHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FD7A6A2166938D00C97057 /* ParserHelper.swift */; };
+		07FD7A6D2166951500C97057 /* WordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070B63502165300D00A5CA32 /* WordModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,7 @@
 		070B634C216501BF00A5CA32 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		070B634E21652D2200A5CA32 /* WebServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceManager.swift; sourceTree = "<group>"; };
 		070B63502165300D00A5CA32 /* WordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordModel.swift; sourceTree = "<group>"; };
+		07FD7A6A2166938D00C97057 /* ParserHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				070B634E21652D2200A5CA32 /* WebServiceManager.swift */,
+				07FD7A6A2166938D00C97057 /* ParserHelper.swift */,
 			);
 			path = "Services+Manager";
 			sourceTree = "<group>";
@@ -391,6 +396,7 @@
 			files = (
 				070B634D216501BF00A5CA32 /* Constants.swift in Sources */,
 				070B634B2164FF6D00A5CA32 /* DesignableView.swift in Sources */,
+				07FD7A6B2166938D00C97057 /* ParserHelper.swift in Sources */,
 				070B634F21652D2200A5CA32 /* WebServiceManager.swift in Sources */,
 				070B63402164FADC00A5CA32 /* AppDelegate.swift in Sources */,
 				070B633F2164FADC00A5CA32 /* ViewController.swift in Sources */,
@@ -405,6 +411,8 @@
 			files = (
 				070B6312216495F300A5CA32 /* WordBreakTests.swift in Sources */,
 				070B63462164FC0300A5CA32 /* Utils.swift in Sources */,
+				07FD7A6C2166938D00C97057 /* ParserHelper.swift in Sources */,
+				07FD7A6D2166951500C97057 /* WordModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -611,8 +619,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DRB39HEKEV;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = WordBreakTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -621,6 +629,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.calance.-.WordBreakTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WordBreak.app/WordBreak";
@@ -632,8 +641,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DRB39HEKEV;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = WordBreakTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -642,6 +651,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.calance.-.WordBreakTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WordBreak.app/WordBreak";
@@ -652,8 +662,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DRB39HEKEV;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = WordBreakUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -662,6 +672,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.calance.-.WordBreakUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = WordBreak;
@@ -672,8 +683,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DRB39HEKEV;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = WordBreakUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -682,6 +693,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.calance.-.WordBreakUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = WordBreak;
