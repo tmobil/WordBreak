@@ -3,7 +3,6 @@ Word Break problem
 
 
 Given an input, find out whether the input can be segmented into a sequence of valid words from the dictionary.
-A valid word is at least two character long.
 
 Assume words are available in a dictionary.
 https://github.com/tmobil/WordBreak/blob/master/english.json
